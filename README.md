@@ -1,0 +1,20 @@
+# Script:
+
+CREATE TABLE tbLibros (
+UUID VARCHAR2(100) PRIMARY KEY,
+TituloLibro VARCHAR2(100) NOT NULL,
+AutorLibro VARCHAR2(100) NOT NULL,
+ISBN VARCHAR2(20) NOT NULL,
+EditorialLibro VARCHAR2(75) NOT NULL,
+AñoPublicacion INT NOT NULL,
+GeneroLibro VARCHAR2(100) NOT NULL,
+NumPaginas INT NOT NULL,
+IdiomaLibro VARCHAR2(50) NOT NULL,
+PrecioLibro NUMBER(5,2) NOT NULL
+);
+
+CREATE TABLE tbUsuarios(
+UUID_usuario VARCHAR2(50) PRIMARY KEY,
+correoElectronico VARCHAR2(50),
+clave VARCHAR2(50)
+)
